@@ -1,0 +1,30 @@
+//Find how many notes of 1, 5, 10, 50, 100 and 500 is needed for the input amount.
+
+
+#include <stdio.h>
+
+int main()
+{
+
+    int total,a,b,c,d,e,f;
+    printf("Enter total amount= ");
+    scanf(" %d",&total);
+
+    a=total/500;
+    b=(total-(a*500))/100;
+    c=(total-(a*500+b*100))/50;
+    d=(total-(a*500+b*100+c*50))/10;
+    e=(total-(a*500+b*100+c*50+d*10))/5;
+    f=(total-(a*500+b*100+c*50+d*10+e*5));
+
+
+    printf("%d notes of 500\n",a);
+    printf("%d notes of 100\n",b);
+    printf("%d notes of 50\n",c);
+    printf("%d notes of 10\n",d);
+    printf("%d notes of 5\n",e);
+    printf("%d notes of 1\n",f);
+
+    return 0;
+
+}
