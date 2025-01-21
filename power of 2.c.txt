@@ -1,0 +1,28 @@
+// console a random positive nonzero number and determine if it is a power of 2.
+
+
+#include <stdio.h>
+
+int main()
+{
+
+    int a,b,c,d;
+    printf("a= ");
+    scanf(" %d",&a);
+    c=a%2;
+    b=a/2;
+    d=b%2;
+
+    if(c==0 && d==0)
+    {
+        printf("Yes");
+    }
+    else
+    {
+        printf("No");
+    }
+
+
+    return 0;
+
+}
