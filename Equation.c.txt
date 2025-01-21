@@ -1,0 +1,30 @@
+//Write a C program that will calculate the terminal velocity of a moving body by using the following equation:
+//v2=u2+2as. find the value of v.
+//u=5 v=6 s=20       ; then v = 16.28
+
+
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+
+    float v,u,s,a;
+    printf("u= ");
+    scanf("%f",&u);
+    printf("a= ");
+    scanf("%f",&a);
+    printf("s= ");
+    scanf("%f",&s);
+
+    v=sqrt(pow(u,2)+2*a*s);
+    
+   // without pow, v= sqrt(u*u+2*a*s);
+
+    printf("v= %.2f",v);
+
+    return 0;
+
+}
