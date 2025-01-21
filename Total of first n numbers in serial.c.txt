@@ -1,0 +1,29 @@
+//Total of first n numbers.
+//Enter the number of integer you want to sum=  6
+//Total of first 1 number is 1
+//Total of first 2 number is 3
+//Total of first 3 number is 6
+//Total of first 4 number is 10
+//Total of first 5 number is 15
+//Total of first 6 number is 21
+
+
+
+#include <stdio.h>
+
+int main()
+{
+
+    unsigned int i,sum=0,count=0;
+    printf("Enter the number of integer you want to sum=  ");
+    scanf(" %u",&count);
+
+   for(i=1;i<=count;i++){
+    sum+= i;
+    printf("\nTotal of first %u number is %u\n",i,sum);
+   }
+
+
+    return 0;
+
+}
