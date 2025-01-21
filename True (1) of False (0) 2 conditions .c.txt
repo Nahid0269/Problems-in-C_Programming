@@ -1,0 +1,23 @@
+//take a, b & c as inputs and decide if the statements are True (1) of False (0)
+
+
+
+#include <stdio.h>
+
+int main()
+{
+
+    int a,b,c,stat_1,stat_2,stat_3;
+    printf("Enter a b c=  ");
+    scanf(" %d %d %d",&a,&b,&c);
+
+    stat_1= ((a+b)<=80) && (b>=0)? 1:0;
+    stat_2= (a-b==0) || (c!=0)? 1:0;
+    stat_3= (a!=b) ||(b!=a) && (c>0)? 1:0;
+
+    printf("a) %d\nb) %d\nc) %d",stat_1,stat_2,stat_3);
+
+
+    return 0;
+
+}
