@@ -1,0 +1,26 @@
+//declare four floating point variables (say a, b, c and d), input them using scanf, and calculate (a + b – c) * d – a / d.
+
+
+#include <stdio.h>
+
+int main()
+{
+
+    float a,b,c,d,res;
+    printf("a= ");
+    scanf(" %f",&a);
+    printf("b= ");
+    scanf(" %f",&b);
+    printf("c= ");
+    scanf(" %f",&c);
+    printf("d= ");
+    scanf(" %f",&d);
+
+    res= (a+b-c)*d-a/d;
+
+
+    printf("(%.1f+%.1f-%.1f)*%.1f-%.1f/%.1f= %f",a,b,c,d,a,d,res);
+
+    return 0;
+
+}
